@@ -34,7 +34,7 @@ if(GPIO.input(pin3) == 1):
 if(GPIO.input(pin4) == 1):
     print("drm4")
 
-os.system('pinctrl | grep -e "GPIO0" -e "GPIO5" -e "GPIO6" -e "GPIO13" -e "GPIO19" -e "GPIO26"')
+os.system('pinctrl | grep -e "GPIO0 " -e "GPIO5 " -e "GPIO6 " -e "GPIO13 " -e "GPIO19 " -e "GPIO 26"')
 GPIO.cleanup()
-os.system('pinctrl | grep -e "GPIO0" -e "GPIO5" -e "GPIO6" -e "GPIO13" -e "GPIO19" -e "GPIO26"')
+os.system('pinctrl | grep -e "GPIO0 " -e "GPIO5 " -e "GPIO6 " -e "GPIO13 " -e "GPIO19 " -e "GPIO 26"')
 
