@@ -24,8 +24,11 @@ try:
         os.system("clear") # clear text
 
         # set pins5,6 output (import mode)
-        GPIO.setup(pin5, GPIO.OUT, GPIO.LOW)
-        GPIO.setup(pin6, GPIO.OUT, GPIO.HIGH)
+        GPIO.setup(pin5, GPIO.OUT)
+        GPIO.setup(pin6, GPIO.OUT)
+                
+        GPIO.output(pin5, GPIO.LOW)
+        GPIO.output(pin6, GPIO.HIGH)
 
         # check modes
         print("import dr modes:")
@@ -39,8 +42,12 @@ try:
             print("drm4")
 
         # swap pin5,6 states (export mode)
-        GPIO.setup(pin5, GPIO.OUT, GPIO.HIGH)
-        GPIO.setup(pin6, GPIO.OUT, GPIO.LOW)
+        GPIO.setup(pin5, GPIO.OUT)
+        GPIO.setup(pin6, GPIO.OUT)
+
+        GPIO.output(pin5, GPIO.HIGH)
+        GPIO.output(pin6, GPIO.LOW)
+        
 
         # check modes
         print("export dr modes:")
