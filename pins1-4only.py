@@ -13,10 +13,11 @@ GPIO.setmode(GPIO.BCM)
 
 # set pins1-4 as input, pull-down
 #os.system("pinctrl 0,5,6,13 pd ip")
-# GPIO.setup(pin1, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-# GPIO.setup(pin2, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-# GPIO.setup(pin3, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
-# GPIO.setup(pin4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(pin1, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(pin2, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+GPIO.setup(pin3, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
+GPIO.setup(pin4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 
 #os.system("clear") # clear text
