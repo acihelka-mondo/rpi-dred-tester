@@ -67,7 +67,7 @@ try:
         if(GPIO.input(pin6) == 1):
             print("drm0")
 
-        time.delay(1)
+        time.sleep(1)
 
 except KeyboardInterrupt:
     print("\nApplication stopped!")
