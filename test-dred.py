@@ -32,13 +32,13 @@ try:
 
         # check modes
         print("import dr modes:")
-        if(GPIO.input(pin1) == 1):
+        if(GPIO.input(pin1) == 0):
             print("drm1")
-        if(GPIO.input(pin2) == 1):
+        if(GPIO.input(pin2) == 0):
             print("drm2")
-        if(GPIO.input(pin3) == 1):
+        if(GPIO.input(pin3) == 0):
             print("drm3")
-        if(GPIO.input(pin4) == 1):
+        if(GPIO.input(pin4) == 0):
             print("drm4")
 
         # swap pin5,6 states (export mode)
