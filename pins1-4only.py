@@ -32,3 +32,5 @@ if(GPIO.input(pin4) == 1):
     print("drm4")
 
 os.system("raspi-gpio get")
+GPIO.cleanup()
+os.system("raspi-gpio get")
