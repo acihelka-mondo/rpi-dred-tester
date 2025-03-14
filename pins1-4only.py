@@ -17,23 +17,18 @@ GPIO.setup(pin2, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(pin3, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(pin4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
-try:
-    while True:
-        os.system("clear") # clear text
 
-        # check modes
-        print("import dr modes:")
-        if(GPIO.input(pin1) == 1):
-            print("drm1")
-        if(GPIO.input(pin2) == 1):
-            print("drm2")
-        if(GPIO.input(pin3) == 1):
-            print("drm3")
-        if(GPIO.input(pin4) == 1):
-            print("drm4")
+os.system("clear") # clear text
 
-        time.sleep(1)
+# check modes
+print("import dr modes:")
+if(GPIO.input(pin1) == 1):
+    print("drm1")
+if(GPIO.input(pin2) == 1):
+    print("drm2")
+if(GPIO.input(pin3) == 1):
+    print("drm3")
+if(GPIO.input(pin4) == 1):
+    print("drm4")
 
-except KeyboardInterrupt:
-    print("\nApplication stopped!")
-finally GPIO.cleanup()
+os.system("raspi-gpio get")
