@@ -34,7 +34,7 @@ if(GPIO.input(pin3) == 1):
 if(GPIO.input(pin4) == 1):
     print("drm4")
 
-os.system('raspi-gpio get | grep -e "0:" -e "5:" -e "6:" -e "13:" -e "19:" -e "26:"')
+os.system('pinctrl | grep -e "0:" -e "5:" -e "6:" -e "13:" -e "19:" -e "26:"')
 GPIO.cleanup()
-os.system('raspi-gpio get | grep -e "0:" -e "5:" -e "6:" -e "13:" -e "19:" -e "26:"')
+os.system('pinctrl | grep -e "0:" -e "5:" -e "6:" -e "13:" -e "19:" -e "26:"')
 
