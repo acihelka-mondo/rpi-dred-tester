@@ -18,7 +18,7 @@ GPIO.setup(pin3, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(pin4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 
-os.system("clear") # clear text
+#os.system("clear") # clear text
 
 GPIO.setup(pin6, GPIO.OUT)
 GPIO.output(pin6, GPIO.HIGH)
