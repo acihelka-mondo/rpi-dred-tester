@@ -20,6 +20,9 @@ GPIO.setup(pin4, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 os.system("clear") # clear text
 
+GPIO.setup(pin6, GPIO.OUT)
+GPIO.output(pin6, GPIO.HIGH)
+
 # check modes
 print("import dr modes:")
 if(GPIO.input(pin1) == 1):
