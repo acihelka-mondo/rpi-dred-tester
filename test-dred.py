@@ -66,6 +66,8 @@ try:
         print("other dr mode:")
         if(GPIO.input(pin6) == 1):
             print("drm0")
+        
+        GPIO.setup(pin6, GPIO.OUT)
 
         time.sleep(1)
 
